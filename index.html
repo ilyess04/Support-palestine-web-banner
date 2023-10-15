@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<style>
+    body {
+        margin-top: 35px;
+    }
+
+    .support-palestine {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .support-palestine,
+    .support-palestine:visited {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        background: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        z-index: 10000;
+        text-decoration: none;
+        font-family: arial;
+    }
+
+    .support-palestine:hover,
+    .support-palestine:active {
+        background: black;
+        display: flex;
+        background: rgb(80, 80, 80);
+        text-decoration: none;
+    }
+
+    .support-palestine__flag {
+
+        margin-right: 10px;
+    }
+
+    .support-palestine__label {
+        color: white;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .background {
+        background: darkgreen;
+
+        height: 21px;
+    }
+
+    .top {
+        background: black;
+        width: 40px;
+        height: 8px;
+        z-index: 1;
+    }
+
+    .middle {
+        background: white;
+        width: 100%;
+        height: 8px;
+        z-index: 1;
+    }
+
+    .triangle {
+        background: auto;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 20px solid red;
+        z-index: 2;
+        position: relative;
+        top: -16px;
+        left: 0;
+    }
+</style>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add the Bootstrap CSS link here -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Your existing custom CSS here */
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap container for responsiveness -->
+    <div class="container">
+        <a class="support-palestine" href="https://www.islamic-relief.org.uk/giving/appeals/palestine/" target="_blank"
+            rel="nofollow noopener" title="Donate to support Palestine">
+            <div class="support-palestine__flag" role="img" aria-label="Flag of Palestine">
+                <div class="background">
+                    <div class="top"></div>
+                    <div class="middle"></div>
+                    <div class="triangle"></div>
+                </div>
+            </div>
+            <div class="support-palestine__label">
+                Donate to support Palestine
+            </div>
+        </a>
+    </div>
+
+    <!-- Add the Bootstrap JS and jQuery script links here if needed -->
+</body>
+
+</html>
